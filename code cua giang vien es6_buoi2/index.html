@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+        
+    <div class="container">
+        <h3>Bài tập 1: Chọn màu</h3>
+        <div id="home" class="fa fa-home" style="font-size: 150px;">
+           
+        </div>
+
+        <div id="colors" class="colors">
+            <!-- <button style="background-color: red;">Red</button> -->
+        </div>
+        <hr />
+        <h3>Bài tập 2: Bài tính điểm trung bình</h3>
+        <div class="row">
+            <div class="col-6">
+                <h3>Khối lớp 1</h3>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Toán</span>
+                        <input id="diemToan" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Lý</span>
+                        <input id="diemLy" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Hoá</span>
+                        <input id="diemHoa" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                   <button class="btn btn-success text-center" id="btnTinhKhoi1"> Tính </button>
+                </div>
+                <input class="form-control text-center" id="diemTrungBinhKhoi1" />
+            </div>
+            <div class="col-6">
+                <h3>Khối lớp 2</h3>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Văn</span>
+                        <input id="diemVan" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Sử</span>
+                        <input id="diemSu" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Địa</span>
+                        <input id="diemDia" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Anh</span>
+                        <input id="tiengAnh" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                   <button class="btn btn-success text-center" id="btnTinhKhoi2"> Tính </button>
+                </div>
+                <input class="form-control text-center" id="diemTrungBinhKhoi2" />
+            </div>
+        </div>
+        <hr />
+        <h3>Bài tập 3: Nhập thông tin nhân viên </h3>
+        <form id="form-nhan-vien" class="row">
+            <div class="col-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Mã NV</span>
+                        <input id="maNhanVien" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Tên nhân viên</span>
+                        <input id="tenNhanVien" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Lương CB</span>
+                        <input id="luongCB" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="input-group">
+                        <span class="input-group-text bg-success text-white">Số giờ làm</span>
+                        <input id="soGioLam" class="form-control" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-danger" id="btnInThongTin">In thông tin</button>
+                </div>
+            </div>
+            <div class="col-6">
+                <table class="table">
+                    <thead>
+                        <tr class="bg-dark text-white">
+                            <th>Mã nhân viên</th>
+                            <th>Tên nhân viên</th>
+                            <th>Lương căn bản</th>
+                            <th>Số giờ làm</th>
+                        </tr>
+                       
+                    </thead>
+                    <tbody id="tblThongTinNhanVien">
+                        <tr class="bg-dark text-white">
+                            <th>1</th>
+                            <th>Nguyễn Văn A</th>
+                            <th>100</th>
+                            <th>50</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+
+    </div>
+    <style>
+        #form-nhan-vien input {
+            background-color: red;
+            color: #fff;
+        }
+    </style>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script type="module" src="index.js"></script>
+
+
+  </body>
+</html>
